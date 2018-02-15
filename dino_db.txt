@@ -1,0 +1,34 @@
+1.
+dinosaurs=# SELECT COUNT(name) FROM dinos;
+ count 
+-------
+   331
+(1 row)
+
+2.
+dinosaurs=# SELECT name FROM dinos WHERE period='Jurassic';
+
+        name         
+---------------------
+ Yuanmousaurus
+ Yinlong
+ Yingshanosaurus
+ Yimenosaurus
+ Yangchuanosaurus
+ Yandusaurus
+ Vulcanodon
+ Tuojiangosaurus
+ Torvosaurus
+ Yunnanosaurus
+ Sinraptor
+ Stegosaurus
+ Seismosaurus
+ Segisaurus
+ Scutellosaurus
+ Scelidosaurus
+ Saurophaganax
+ Sarcosaurus
+ Shunosaurus
+ Rhoetosaurus
+ Poekilopleuron
+
