@@ -32,3 +32,20 @@ dinosaurs=# SELECT name FROM dinos WHERE period='Jurassic';
  Rhoetosaurus
  Poekilopleuron
 
+3.
+dinosaurs=# SELECT SUM(length) FROM dinos WHERE period='Cretaceous';
+   sum   
+---------
+ 1366.45
+(1 row)
+
+
+4.
+dinosaurs=# SELECT * FROM dinos WHERE period = 'Jurassic' OR period = 'Cretacious' ORDER BY name;
+
+
+ id  |        name         |                                                                                                  taxonomy                                                                                                   |     species      | length |  period  |    diet     |         created_at         |         updated_at         |   t_order    
+-----+---------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+--------+----------+-------------+----------------------------+----------------------------+--------------
+ 331 | Aardonyx            | Dinosauria, Saurischia, Sauropodomorpha, Prosauropoda, Anchisauria, Aardonyx                                                                                                                                | Celestae         |      8 | Jurassic | Herbivorous | 2017-03-24 18:56:22.908402 | 2017-03-24 18:57:00.066825 | Saurischia
+ 324 | Agilisaurus         | Dinosauria, Ornithischia, Genasauria, Cerapoda, Ornithopoda, Euornithopoda, Agilisaurus                                                                                                                     | Louderbacki      |    1.5 | Jurassic | Herbivorous | 2017-03-24 18:56:22.897323 | 2017-03-24 18:57:00.060431 | Ornithischia
+ 318 | Allosaurus          | Dinosauria, Saurischia, Theropoda, Neotherapoda, Tetanurae, Avetherapoda, Carnosauria, Allosauroidea, Allosauridae, Allosaurus                                                                              | Fragi
